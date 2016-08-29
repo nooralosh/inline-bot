@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','233601973:AAHKctX32gQ7xa8GCFfuP7_kX8yYx2auBzI');
+define('API_KEY','260934712:AAFWcYcBfaUNQSOWm1bD4l5Oo54TGnf9-5s');
 $the_admin_id = 0;
 
 file_put_contents("count",file_get_contents("count")+1);
@@ -397,9 +397,6 @@ file_put_contents('ola',ob_get_clean());
         $helpTXT = "🌐      به راهنمای ربات خوش آمدید  👍
 ➖➖➖➖➖➖➖
 
-آموزش کامل ویدیویی :
-https://telegram.me/mhrdev/834
-
 این ربات به شما این امکان را می دهد که برای کانال های خود یک بنر با عکس و دکمه شیشه ایی پیاده کنید.
 
 🌐🌐‼️ آپدیت جدید هم پیاده شد ، می توانید لیست تبادل با دکمه شیشه ایی پیاده کنید
@@ -528,7 +525,7 @@ https://telegram.me/joinchat/linke_dovom
 
 توجه کنید که حتما ربات را ادمین کانالتان کرده باشید و شناسه را با @ ارسال کنید .
 
-برای مثال @mhrdev .
+برای مثال @ُSpartaSoft .
 
 این بخش اجباری هست .".$cancel_Text,
                                 'parse_mode'=>'HTML'
@@ -1241,7 +1238,7 @@ https://telegram.me/SendStyle_Robot
 //                        updateDB(getCurrentMakeID($userID), $DB);
 //                        setUserStep($userID, '5');
 //                        makeHTTPRequest('sendMessage', [
-//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @mhrdev می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @SpartaSoft می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
 //                            'chat_id' => $userID
 //                        ]);
 //                    }else{
@@ -1254,7 +1251,7 @@ https://telegram.me/SendStyle_Robot
 //
 //                case '5':{
 //                    $DB = getMakeDB(getCurrentMakeID($userID));
-//                    $DB->f->chid = "@mhrdev";
+//                    $DB->f->chid = "@IR_Telegram_Developer";
 //                    $DB->done = true;
 //                    updateDB(getCurrentMakeID($userID),$DB);
 //                    setUserStep($userID,'1');
@@ -1296,7 +1293,7 @@ https://telegram.me/SendStyle_Robot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot233601973:AAHKctX32gQ7xa8GCFfuP7_kX8yYx2auBzI/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot260934712:AAFWcYcBfaUNQSOWm1bD4l5Oo54TGnf9-5s/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
@@ -1344,7 +1341,7 @@ https://telegram.me/SendStyle_Robot
                         updateDB(getCurrentMakeID($userID),$DB);
                         setUserStep($userID,'10');
                         makeHTTPRequest('sendMessage',[
-                            'text'=>"شناسه کانال را بدهید. مانند @mhrdev\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+                            'text'=>"شناسه کانال را بدهید. مانند @SpartaSoft\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
                             'chat_id'=>$userID
                         ]);
                     }else{
@@ -1358,7 +1355,7 @@ https://telegram.me/SendStyle_Robot
 
                 case '10':{
                     $DB = getMakeDB(getCurrentMakeID($userID));
-                    $DB->s->chid = "@mhrdev";
+                    $DB->s->chid = "@IR_Telegram_Developer";
                     $DB->done = true;
                     updateDB(getCurrentMakeID($userID),$DB);
                     setUserStep($userID,'1');
@@ -1385,7 +1382,7 @@ https://telegram.me/SendStyle_Robot
             ];
             var_dump(makeHTTPRequest('sendMessage',[
                 'chat_id'=>$userID,
-                'text'=>"🌐به ربات دکمه شیشه ایی خوب آمدید
+                'text'=>"🌐به ربات ارسال تبلیغات اینلاین خوش آمدید
 ➖➖➖➖➖➖➖
 اگر می خواهید با ربات و روش کار آن آشنا شوید کامند /help را وارد کنید .
 
@@ -1410,7 +1407,7 @@ https://telegram.me/SendStyle_Robot
 
 برای ارسال به کانال بدون via بر روی /novia کلیک کنید .
 /novia
-.",
+",
                 'parse_mode'=>'HTML',
                 'reply_markup'=>json_encode([
                     'inline_keyboard'=>[
