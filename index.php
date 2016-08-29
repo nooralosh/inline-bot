@@ -1,12 +1,12 @@
 <?php
 ob_start();
-define('API_KEY','260934712:AAHzPQ8I9pjmtDedWD--58cygSy_TDq-Yvc');
+define('API_KEY','260934712:AAHX9K7O3WhLQCP927CrN8LqY4EDmJsculY');
 $the_admin_id = 0;
 
 file_put_contents("count",file_get_contents("count")+1);
 
 $ad_btn='آموزش های رایگان برنامه نویسی';
-$ad_url='http://telegram.me/Spartacus_Team';
+$ad_url='http://telegram.me/SpartaSoft';
 $ad_text = "1⃣ در تلگـ ـلیست، کانال خودتون رو به رایگان در مرجع کانالهای تلگرام فارسی قرار بدید، به رايگان تبليغ و عضوگيرى كنيد.
 <a href='http://www.teleglist.com/?bot'>به رایگان در تلگـ ـلیست کانال خود را ثبت کنید</a>
 ➖➖➖➖➖➖
@@ -525,7 +525,7 @@ https://telegram.me/joinchat/linke_dovom
 
 توجه کنید که حتما ربات را ادمین کانالتان کرده باشید و شناسه را با @ ارسال کنید .
 
-برای مثال @ُSpartaSoft .
+برای مثال @SpartaSoft .
 
 این بخش اجباری هست .".$cancel_Text,
                                 'parse_mode'=>'HTML'
@@ -730,9 +730,9 @@ https://telegram.me/joinchat/linke_dovom
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
                             'text'=>"آموزش های رایگان برنامه نویسی
-https://telegram.me/SpartaSoft
+https://telegram.me/mhrdev
 آموزش توسعه ربات تلگرام
-https://telegram.me/Spartacus_Team
+https://telegram.me/tbdchannel
 به ربات ما سر بزنید
 https://telegram.me/SendStyle_Robot
                             "
@@ -1238,7 +1238,7 @@ https://telegram.me/SendStyle_Robot
 //                        updateDB(getCurrentMakeID($userID), $DB);
 //                        setUserStep($userID, '5');
 //                        makeHTTPRequest('sendMessage', [
-//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @SpartaSoft می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @mhrdev می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
 //                            'chat_id' => $userID
 //                        ]);
 //                    }else{
@@ -1251,7 +1251,7 @@ https://telegram.me/SendStyle_Robot
 //
 //                case '5':{
 //                    $DB = getMakeDB(getCurrentMakeID($userID));
-//                    $DB->f->chid = "@IR_Telegram_Developer";
+//                    $DB->f->chid = "@mhrdev";
 //                    $DB->done = true;
 //                    updateDB(getCurrentMakeID($userID),$DB);
 //                    setUserStep($userID,'1');
@@ -1293,7 +1293,7 @@ https://telegram.me/SendStyle_Robot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot260934712:AAHzPQ8I9pjmtDedWD--58cygSy_TDq-Yvc/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot260934712:AAHX9K7O3WhLQCP927CrN8LqY4EDmJsculY/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
@@ -1341,7 +1341,7 @@ https://telegram.me/SendStyle_Robot
                         updateDB(getCurrentMakeID($userID),$DB);
                         setUserStep($userID,'10');
                         makeHTTPRequest('sendMessage',[
-                            'text'=>"شناسه کانال را بدهید. مانند @SpartaSoft\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+                            'text'=>"شناسه کانال را بدهید. مانند @mhrdev\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
                             'chat_id'=>$userID
                         ]);
                     }else{
@@ -1355,7 +1355,7 @@ https://telegram.me/SendStyle_Robot
 
                 case '10':{
                     $DB = getMakeDB(getCurrentMakeID($userID));
-                    $DB->s->chid = "@IR_Telegram_Developer";
+                    $DB->s->chid = "@mhrdev";
                     $DB->done = true;
                     updateDB(getCurrentMakeID($userID),$DB);
                     setUserStep($userID,'1');
@@ -1382,7 +1382,7 @@ https://telegram.me/SendStyle_Robot
             ];
             var_dump(makeHTTPRequest('sendMessage',[
                 'chat_id'=>$userID,
-                'text'=>"🌐به ربات ارسال تبلیغات اینلاین خوش آمدید
+                'text'=>"🌐به ربات دکمه شیشه ایی خوب آمدید
 ➖➖➖➖➖➖➖
 اگر می خواهید با ربات و روش کار آن آشنا شوید کامند /help را وارد کنید .
 
@@ -1406,18 +1406,17 @@ https://telegram.me/SendStyle_Robot
 /convert
 
 برای ارسال به کانال بدون via بر روی /novia کلیک کنید .
-/novia
-.",
+/novia",
                 'parse_mode'=>'HTML',
                 'reply_markup'=>json_encode([
                     'inline_keyboard'=>[
                         [['text'=>$ad_btn,'url'=>$ad_url]], 
-                      [['text'=>'تماس با پیام رسان توسعه دهنده','url'=>'https://telegram.me/SpartacusTeam_Bot']],
+                      [['text'=>'به رایگان در تلگـ ـلیست کانال خود را ثبت کنید','url'=>'http://teleglist.com/?bot']],
 
-                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['SpartaSoft']]],
+                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['mhrdev_c']]],
 
                         [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/IR_Telegram_Developer']],
-                        [['text'=>'ساخت ربات پیام رسان','url'=>'https://telegram.me/Mother_Robot']]
+                        [['text'=>'ربات ساخت پیام رسان','url'=>'https://telegram.me/Mother_Robot']]
                     ]
                 ])
             ]));
