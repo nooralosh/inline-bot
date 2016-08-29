@@ -1415,12 +1415,12 @@ https://telegram.me/SendStyle_Robot
                 'reply_markup'=>json_encode([
                     'inline_keyboard'=>[
                         [['text'=>$ad_btn,'url'=>$ad_url]], 
-                      [['text'=>'به رایگان در تلگـ ـلیست کانال خود را ثبت کنید','url'=>'http://teleglist.com/?bot']],
+                      [['text'=>'تماس با پیام رسان توسعه دهنده','url'=>'https://telegram.me/SpartacusTeam_Bot']],
 
-                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['mhrdev_c']]],
+                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['SpartaSoft']]],
 
                         [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/IR_Telegram_Developer']],
-                        [['text'=>'ربات نظر سنجی در کانال','url'=>'https://telegram.me/chvotebot']]
+                        [['text'=>'ساخت ربات پیام رسان','url'=>'https://telegram.me/Mother_Robot']]
                     ]
                 ])
             ]));
