@@ -1407,7 +1407,7 @@ https://telegram.me/SendStyle_Robot
 
 برای ارسال به کانال بدون via بر روی /novia کلیک کنید .
 /novia
-",
+.",
                 'parse_mode'=>'HTML',
                 'reply_markup'=>json_encode([
                     'inline_keyboard'=>[
