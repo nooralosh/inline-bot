@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','233601973:AAEHXEeAc-F-cMaNbo73_sGrZdyBo8NfcUA');
+define('API_KEY','233601973:AAHKctX32gQ7xa8GCFfuP7_kX8yYx2auBzI');
 $the_admin_id = 0;
 
 file_put_contents("count",file_get_contents("count")+1);
@@ -1296,7 +1296,7 @@ https://telegram.me/SendStyle_Robot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot233601973:AAEHXEeAc-F-cMaNbo73_sGrZdyBo8NfcUA/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot233601973:AAHKctX32gQ7xa8GCFfuP7_kX8yYx2auBzI/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
