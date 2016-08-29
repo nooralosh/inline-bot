@@ -1419,7 +1419,7 @@ https://telegram.me/SendStyle_Robot
 
                         [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['mhrdev_c']]],
 
-                        [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/pp2007ws']],
+                        [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/IR_Telegram_Developer']],
                         [['text'=>'ربات نظر سنجی در کانال','url'=>'https://telegram.me/chvotebot']]
                     ]
                 ])
